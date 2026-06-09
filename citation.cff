@@ -7,7 +7,7 @@ authors:
     given-names: "Amirhossein"
   - family-names: "Fathinavid"
     given-names: "Amirhossein"
-repository-code: "https://github.com/Amirhossein-bot/MLCLA-Net-COPD-LUAD"
+repository-code: "https://github.com/AmirhosseinShoshtariTavasoli/MLCLA_COPD_LUAD"
 version: "1.0.0"
 date-released: "2026-01-01"
 license: "MIT"
