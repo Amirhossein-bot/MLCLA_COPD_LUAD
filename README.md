@@ -4,7 +4,7 @@ This repository contains reproducibility material for the manuscript:
 
 **MLCLA-Net: A Multilayer Systems-Biology Framework for Identifying Shared Regulatory Communities Between COPD and Lung Adenocarcinoma**
 
-Replace the title above with the final accepted title before public release.
+##
 
 ## Overview
 
