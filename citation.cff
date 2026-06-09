@@ -3,11 +3,11 @@ title: "MLCLA-Net: A Multilayer Systems-Biology Framework for Identifying Shared
 message: "If you use this repository, please cite the associated manuscript."
 type: software
 authors:
-  - family-names: "YOUR_LAST_NAME"
-    given-names: "YOUR_FIRST_NAME"
-  - family-names: "COAUTHOR_LAST_NAME"
-    given-names: "COAUTHOR_FIRST_NAME"
-repository-code: "https://github.com/YOUR_USERNAME/MLCLA-Net-COPD-LUAD"
+  - family-names: "Shoshtari Tavasoli"
+    given-names: "Amirhossein"
+  - family-names: "Fathinavid"
+    given-names: "Amirhossein"
+repository-code: "https://github.com/Amirhossein-bot/MLCLA-Net-COPD-LUAD"
 version: "1.0.0"
 date-released: "2026-01-01"
 license: "MIT"
