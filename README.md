@@ -120,7 +120,7 @@ pip install -r requirements.txt
 ### conda
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MLCLA-Net-COPD-LUAD.git
+git clone https://github.com/AmirhosseinShoshtariTavasoli/MLCLA_COPD_LUAD
 cd MLCLA-Net-COPD-LUAD
 conda env create -f environment.yml
 conda activate mlcla-net
