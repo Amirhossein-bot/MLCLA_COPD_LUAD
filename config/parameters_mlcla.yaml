@@ -1,0 +1,81 @@
+# MLCLA-Net algorithm parameters
+# These parameters correspond to the selected MLCLA run reported in the manuscript.
+
+mlcla:
+  algorithm_name: "Multilayer Cellular Learning Automata"
+  framework_name: "MLCLA-Net"
+  selected_run_name: "MLCLA-Net selected run"
+  random_seed: 42
+
+network:
+  number_of_layers: 3
+  layers:
+    - name: "COPD_gene_coexpression"
+      description: "COPD gene co-expression layer reconstructed from mRNA expression profiles"
+    - name: "miRNA_associated_cross_regulatory"
+      description: "miRNA-associated cross-regulatory layer"
+    - name: "LUAD_gene_coexpression"
+      description: "LUAD gene co-expression layer reconstructed from mRNA expression profiles"
+
+  node_layer_objects: 24150
+  supra_network_edges: 209503
+  nodes_per_layer: 8050
+
+optimization:
+  max_iterations: 1000
+  best_iteration: 282
+  early_stopping_patience: 40
+  interlayer_coupling_lambda: 0.1
+  reward_rate: 0.25
+  penalty_rate: 0.05
+
+learning_automata:
+  node_representation: "each node-layer object is treated as a learning automaton"
+  action_space:
+    - "current community label"
+    - "labels of intralayer neighbors"
+    - "labels of same-identifier counterparts in other layers"
+  initialization: "nodes sharing the same base identifier across two or more layers are initialized with a common base-label seed"
+  update_rule: "linear reward-penalty"
+  local_response_components:
+    - "intralayer neighborhood agreement"
+    - "interlayer same-identifier alignment"
+
+objective:
+  global_objective: "average weighted intralayer modularity plus interlayer alignment term"
+  final_objective_score: 0.8935
+  average_intralayer_modularity: 0.3516
+  interlayer_alignment: 0.4264
+
+community_filtering:
+  retained_community_criteria:
+    required_layers: 3
+    minimum_shared_identifiers: 5
+  retained_communities: 5
+  unique_shared_identifiers: 228
+
+complexity:
+  symbols:
+    V: "number of node-layer objects"
+    E: "number of supra-network edges"
+    T: "number of MLCLA optimization iterations"
+    a_avg: "average candidate-action set size per node-layer object"
+  supra_network_construction: "O(V + E)"
+  per_iteration: "O(E + V * a_avg)"
+  full_optimization: "O(T * (E + V * a_avg))"
+  memory_usage: "O(E + V * a_avg)"
+
+convergence:
+  monitored_metrics:
+    - "global objective score"
+    - "average intralayer modularity"
+    - "interlayer same-identifier alignment"
+  convergence_interpretation: "best objective reached before maximum iteration limit"
+  convergence_figure: "Figure 5"
+
+outputs:
+  community_assignments: "results/selected_mlcla_outputs/community_assignments.csv"
+  retained_communities: "results/selected_mlcla_outputs/retained_communities.csv"
+  shared_identifier_assignments: "results/selected_mlcla_outputs/shared_identifier_assignments.csv"
+  optimization_history: "results/selected_mlcla_outputs/optimization_history.csv"
+  convergence_plot: "results/figures/Figure5_MLCLA_convergence_profile.png"
