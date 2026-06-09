@@ -1,0 +1,6 @@
+sample,group,disease_context
+S01_Control,control,toy
+S02_Control,control,toy
+S03_Case,case,toy
+S04_Case,case,toy
+S05_Case,case,toy

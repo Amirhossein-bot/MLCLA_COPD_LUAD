@@ -1,0 +1,9 @@
+source,target,weight,layer,edge_type
+COPD_gene::TP53,COPD_gene::CAPN1,0.82,COPD_gene_coexpression,intralayer
+COPD_gene::TP53,COPD_gene::CLNS1A,0.71,COPD_gene_coexpression,intralayer
+miRNA_cross::hsa-miR-1274a,miRNA_cross::TP53,-0.64,miRNA_associated_cross_regulatory,cross_molecular
+miRNA_cross::hsa-miR-302e,miRNA_cross::CAPN1,-0.58,miRNA_associated_cross_regulatory,cross_molecular
+LUAD_gene::TP53,LUAD_gene::PAFAH1B2,0.76,LUAD_gene_coexpression,intralayer
+LUAD_gene::CAPN1,LUAD_gene::CLNS1A,0.69,LUAD_gene_coexpression,intralayer
+COPD_gene::TP53,miRNA_cross::TP53,1.0,interlayer,same_identifier
+miRNA_cross::TP53,LUAD_gene::TP53,1.0,interlayer,same_identifier
