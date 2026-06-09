@@ -40,7 +40,7 @@ MLCLA-Net-COPD-LUAD/
 └── supplementary/
 ```
 
-Recommended script folders:
+Analysis workflow:
 
 ```text
 scripts/
@@ -153,7 +153,7 @@ python scripts/08_survival/run_mirna_survival.py
 python scripts/09_figures/generate_all_figures.py
 ```
 
-## Expected outputs
+## Output structure
 
 ```text
 results/
