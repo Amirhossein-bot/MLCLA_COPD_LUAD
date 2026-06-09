@@ -103,7 +103,7 @@ The final three-layer supra-network contained:
 ### pip
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MLCLA-Net-COPD-LUAD.git
+git clone https://github.com/AmirhosseinShoshtariTavasoli/MLCLA_COPD_LUAD
 cd MLCLA-Net-COPD-LUAD
 python -m venv .venv
 source .venv/bin/activate
