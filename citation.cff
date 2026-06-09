@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "MLCLA-Net: A Multilayer Systems-Biology Framework for Identifying Shared Regulatory Communities Between COPD and Lung Adenocarcinoma"
+message: "If you use this repository, please cite the associated manuscript."
+type: software
+authors:
+  - family-names: "YOUR_LAST_NAME"
+    given-names: "YOUR_FIRST_NAME"
+  - family-names: "COAUTHOR_LAST_NAME"
+    given-names: "COAUTHOR_FIRST_NAME"
+repository-code: "https://github.com/YOUR_USERNAME/MLCLA-Net-COPD-LUAD"
+version: "1.0.0"
+date-released: "2026-01-01"
+license: "MIT"
+keywords:
+  - MLCLA-Net
+  - multilayer networks
+  - community detection
+  - COPD
+  - LUAD
+  - systems biology
+  - bioinformatics
+abstract: "MLCLA-Net is a multilayer transcriptomic framework for identifying shared regulatory communities between COPD and lung adenocarcinoma using disease-specific gene co-expression networks, miRNA-mRNA association networks, multilayer community detection, benchmarking, enrichment, external validation, and survival-support analysis."

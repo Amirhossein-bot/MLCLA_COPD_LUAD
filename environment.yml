@@ -1,0 +1,28 @@
+name: mlcla-net
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - networkx
+  - python-louvain
+  - igraph
+  - leidenalg
+  - statsmodels
+  - lifelines
+  - matplotlib
+  - seaborn
+  - plotly
+  - openpyxl
+  - xlsxwriter
+  - pyyaml
+  - tqdm
+  - requests
+  - pip
+  - pip:
+      - gseapy

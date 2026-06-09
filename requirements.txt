@@ -1,0 +1,32 @@
+# Core scientific computing
+numpy
+pandas
+scipy
+scikit-learn
+
+# Network analysis
+networkx
+python-louvain
+igraph
+leidenalg
+
+# Statistics and survival analysis
+statsmodels
+lifelines
+
+# Enrichment analysis
+gseapy
+
+# Plotting and visualization
+matplotlib
+seaborn
+plotly
+
+# Excel and file I/O
+openpyxl
+xlsxwriter
+
+# Utilities
+pyyaml
+tqdm
+requests
